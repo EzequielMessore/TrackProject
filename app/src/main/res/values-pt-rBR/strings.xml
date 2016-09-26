@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_episodes">Episódios</string>
+    <string name="text_rating">Classificações</string>
+    <string name="text_vote">Votos</string>
+    <string name="text_episode_count">Quantidade Episódios</string>
+    <string name="text_first_aired">Primeira Exibição</string>
+    <string name="text_aired_episodes">Exibidos</string>
+    <string name="text_name_season">Temporada %s</string>
+    <string name="server_error">Erro ao se conectar ao servidor</string>
+    <string name="lbl_refresh">Recarregar</string>
+</resources>

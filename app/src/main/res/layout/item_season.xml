@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPortrait"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:id="@+id/tvNameSeason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivPortrait"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/ivPortrait"
+                android:layout_toRightOf="@+id/ivPortrait"
+                android:gravity="center"
+                android:text="Temporada 11"
+                android:textAppearance="@android:style/TextAppearance.Small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameSeason"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/ivPortrait"
+                android:layout_toRightOf="@+id/ivPortrait"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/text_rating"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                    <TextView
+                        android:id="@+id/tvRating"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:gravity="end"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="@string/text_vote"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                    <TextView
+                        android:id="@+id/tvVotes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:gravity="end"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/text_episode_count"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                    <TextView
+                        android:id="@+id/tvEpisodeCount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:gravity="end"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/text_aired_episodes"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                    <TextView
+                        android:id="@+id/tvAiredEpisodes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:gravity="end"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".2"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/text_first_aired"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                    <TextView
+                        android:id="@+id/tvFirstAired"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:gravity="end"
+                        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

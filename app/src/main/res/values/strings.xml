@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TraktProject</string>
+    <string name="text_episodes">Episodes</string>
+    <string name="text_rating">Ratings</string>
+    <string name="text_vote">Votes</string>
+    <string name="text_episode_count">Episode Count</string>
+    <string name="text_first_aired">First Aired</string>
+    <string name="text_aired_episodes">Aired</string>
+    <string name="text_name_season">Season %s</string>
+    <string name="server_error">Connect to server error</string>
+    <string name="lbl_refresh">Refresh</string>
+
+</resources>
